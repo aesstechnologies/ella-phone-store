@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "ELLA — Phone Repair & Store",
+    "description": "Beautiful phones, expert repairs, and friendly service. Shop refurbished devices or track your repair with ELLA."
+  },
+  "nav": {
+    "shop": "Shop",
+    "repairs": "Repairs",
+    "about": "About",
+    "contact": "Contact",
+    "account": "My Account",
+    "admin": "Admin",
+    "signIn": "Sign in",
+    "signOut": "Sign out"
+  },
+  "home": {
+    "heroTitle": "Phones you’ll love.",
+    "heroTitleAccent": "Repairs you can trust.",
+    "heroSubtitle": "ELLA brings premium refurbished phones and caring repair service together — pick up in store or get delivery nearby.",
+    "shopNow": "Shop phones",
+    "requestRepair": "Request a repair",
+    "featured": "Featured picks",
+    "featuredSubtitle": "Hand-selected devices with transparent pricing",
+    "whyElla": "Why ELLA?",
+    "whyItems": {
+      "quality": {
+        "title": "Quality checked",
+        "desc": "Every device is tested — cameras, biometrics, battery & more."
+      },
+      "price": {
+        "title": "Fair pricing",
+        "desc": "Premium phones without the premium markup."
+      },
+      "care": {
+        "title": "Personal care",
+        "desc": "Chat with us, track your repair, pick up when ready."
+      }
+    },
+    "deliveryBanner": "Free pickup · Delivery available nearby"
+  },
+  "shop": {
+    "title": "Shop phones",
+    "subtitle": "Find your next device — unlocked, tested, and ready.",
+    "filterAll": "All",
+    "filterApple": "Apple",
+    "filterSamsung": "Samsung",
+    "from": "From",
+    "viewProduct": "View details",
+    "noProducts": "No products available yet. Check back soon!"
+  },
+  "product": {
+    "model": "Model",
+    "storage": "Storage",
+    "condition": "Condition",
+    "color": "Color",
+    "buyFrom": "Buy from",
+    "orMonthly": "or {price}/mo. for 24 mo.",
+    "freePickup": "Free pickup",
+    "pickupFromStore": "Pick up from store",
+    "deliveryAvailable": "Delivery available",
+    "requestPurchase": "Request purchase",
+    "contactUs": "Contact us to complete your order — we'll confirm availability and fulfillment.",
+    "conditions": {
+      "refurbished": "Refurbished",
+      "used": "Used — Great",
+      "new": "New"
+    },
+    "fulfillment": {
+      "title": "How would you like to receive it?",
+      "pickup": "Pick up from store",
+      "storeDelivery": "Store delivery",
+      "deliveryService": "Delivery service",
+      "pickupDesc": "Collect at our store when ready",
+      "storeDeliveryDesc": "Delivered by our team (within {radius} km)",
+      "deliveryServiceDesc": "Shipped via delivery partner (within {radius} km)"
+    },
+    "addedToCart": "Request submitted! We'll be in touch soon.",
+    "stripeSoon": "Online payment coming soon — request purchase for now."
+  },
+  "repairs": {
+    "title": "Phone repairs",
+    "subtitle": "Drop off, track, and pick up — we keep you updated every step.",
+    "formTitle": "Request a repair",
+    "deviceModel": "Device model",
+    "issue": "Describe the issue",
+    "issuePlaceholder": "Screen cracked, battery drains fast, won't charge...",
+    "submit": "Submit repair request",
+    "signInPrompt": "Sign in to track your repair status",
+    "statuses": {
+      "received": "Received",
+      "diagnosing": "Diagnosing",
+      "in_repair": "In repair",
+      "ready": "Ready for pickup",
+      "picked_up": "Picked up",
+      "cancelled": "Cancelled"
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Questions about a phone or repair? We'd love to hear from you.",
+    "email": "Email",
+    "visitUs": "Visit us",
+    "hours": "Store hours",
+    "hoursValue": "Mon–Sat 10am–7pm · Sun 11am–5pm"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signUp": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full name",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signInButton": "Sign in",
+    "signUpButton": "Create account"
+  },
+  "account": {
+    "title": "My account",
+    "repairs": "My repairs",
+    "orders": "My orders",
+    "messages": "Messages",
+    "noRepairs": "No repair requests yet.",
+    "noOrders": "No orders yet.",
+    "noMessages": "No conversations yet. Send us a message anytime!"
+  },
+  "admin": {
+    "title": "Admin dashboard",
+    "products": "Products",
+    "repairs": "Repairs",
+    "orders": "Orders",
+    "messages": "Messages",
+    "settings": "Store settings",
+    "addProduct": "Add product",
+    "editProduct": "Edit product",
+    "save": "Save changes",
+    "saved": "Saved!",
+    "storeSettings": {
+      "title": "Store settings",
+      "storeName": "Store name",
+      "tagline": "Tagline",
+      "email": "Business email",
+      "phone": "Phone",
+      "address": "Store address",
+      "addressLine1": "Address line 1",
+      "city": "City",
+      "state": "State",
+      "zip": "ZIP code",
+      "deliveryRadius": "Delivery radius (km)",
+      "storeDelivery": "Enable store delivery",
+      "deliveryService": "Enable delivery service",
+      "logoUrl": "Logo URL",
+      "logoPlaceholder": "Logo placeholder URL",
+      "stripeEnabled": "Enable Stripe payments (backlog)"
+    }
+  },
+  "chat": {
+    "title": "Chat with ELLA",
+    "placeholder": "Type a message...",
+    "send": "Send",
+    "greeting": "Hi! How can we help you today?"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "learnMore": "Learn more"
+  },
+  "footer": {
+    "tagline": "Phone repair & store — with care.",
+    "rights": "All rights reserved."
+  }
+}

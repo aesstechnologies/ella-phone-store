@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" role="img" aria-label="ELLA logo placeholder">
+  <rect width="120" height="120" rx="24" fill="#FFF5F7"/>
+  <rect x="8" y="8" width="104" height="104" rx="20" stroke="#F4A4B8" stroke-width="2" stroke-dasharray="8 6" fill="none"/>
+  <rect x="42" y="28" width="36" height="64" rx="8" fill="#FCE4EC" stroke="#E8919A" stroke-width="2"/>
+  <rect x="48" y="36" width="24" height="40" rx="3" fill="#fff"/>
+  <circle cx="60" cy="82" r="3" fill="#C9A0DC"/>
+  <text x="60" y="108" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#9B8AA5">Your logo</text>
+</svg>

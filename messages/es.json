@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "ELLA — Reparación y Tienda de Celulares",
+    "description": "Celulares hermosos, reparaciones expertas y servicio amable. Compra dispositivos reacondicionados o sigue tu reparación con ELLA."
+  },
+  "nav": {
+    "shop": "Tienda",
+    "repairs": "Reparaciones",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "account": "Mi cuenta",
+    "admin": "Admin",
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión"
+  },
+  "home": {
+    "heroTitle": "Celulares que amarás.",
+    "heroTitleAccent": "Reparaciones en las que confías.",
+    "heroSubtitle": "ELLA combina celulares reacondicionados premium con un servicio de reparación cercano — recoge en tienda o recibe entrega cerca de ti.",
+    "shopNow": "Ver celulares",
+    "requestRepair": "Solicitar reparación",
+    "featured": "Destacados",
+    "featuredSubtitle": "Dispositivos seleccionados con precios transparentes",
+    "whyElla": "¿Por qué ELLA?",
+    "whyItems": {
+      "quality": {
+        "title": "Calidad verificada",
+        "desc": "Cada dispositivo es probado — cámaras, biometría, batería y más."
+      },
+      "price": {
+        "title": "Precios justos",
+        "desc": "Celulares premium sin el sobreprecio."
+      },
+      "care": {
+        "title": "Atención personal",
+        "desc": "Chatea con nosotros, sigue tu reparación, recoge cuando esté listo."
+      }
+    },
+    "deliveryBanner": "Recogida gratis · Entrega disponible cerca"
+  },
+  "shop": {
+    "title": "Tienda de celulares",
+    "subtitle": "Encuentra tu próximo dispositivo — desbloqueado, probado y listo.",
+    "filterAll": "Todos",
+    "filterApple": "Apple",
+    "filterSamsung": "Samsung",
+    "from": "Desde",
+    "viewProduct": "Ver detalles",
+    "noProducts": "Aún no hay productos disponibles. ¡Vuelve pronto!"
+  },
+  "product": {
+    "model": "Modelo",
+    "storage": "Almacenamiento",
+    "condition": "Condición",
+    "color": "Color",
+    "buyFrom": "Comprar desde",
+    "orMonthly": "o {price}/mo. por 24 meses",
+    "freePickup": "Recogida gratis",
+    "pickupFromStore": "Recoger en tienda",
+    "deliveryAvailable": "Entrega disponible",
+    "requestPurchase": "Solicitar compra",
+    "contactUs": "Contáctanos para completar tu pedido — confirmaremos disponibilidad y entrega.",
+    "conditions": {
+      "refurbished": "Reacondicionado",
+      "used": "Usado — Excelente",
+      "new": "Nuevo"
+    },
+    "fulfillment": {
+      "title": "¿Cómo te gustaría recibirlo?",
+      "pickup": "Recoger en tienda",
+      "storeDelivery": "Entrega de la tienda",
+      "deliveryService": "Servicio de entrega",
+      "pickupDesc": "Recoge en nuestra tienda cuando esté listo",
+      "storeDeliveryDesc": "Entregado por nuestro equipo (dentro de {radius} km)",
+      "deliveryServiceDesc": "Enviado por socio de entrega (dentro de {radius} km)"
+    },
+    "addedToCart": "¡Solicitud enviada! Nos pondremos en contacto pronto.",
+    "stripeSoon": "Pago en línea próximamente — solicita la compra por ahora."
+  },
+  "repairs": {
+    "title": "Reparación de celulares",
+    "subtitle": "Entrega, sigue y recoge — te mantenemos informado en cada paso.",
+    "formTitle": "Solicitar una reparación",
+    "deviceModel": "Modelo del dispositivo",
+    "issue": "Describe el problema",
+    "issuePlaceholder": "Pantalla rota, batería se agota rápido, no carga...",
+    "submit": "Enviar solicitud",
+    "signInPrompt": "Inicia sesión para seguir el estado de tu reparación",
+    "statuses": {
+      "received": "Recibido",
+      "diagnosing": "Diagnosticando",
+      "in_repair": "En reparación",
+      "ready": "Listo para recoger",
+      "picked_up": "Recogido",
+      "cancelled": "Cancelado"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Preguntas sobre un celular o reparación? Nos encantaría escucharte.",
+    "email": "Correo",
+    "visitUs": "Visítanos",
+    "hours": "Horario",
+    "hoursValue": "Lun–Sáb 10am–7pm · Dom 11am–5pm"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "fullName": "Nombre completo",
+    "noAccount": "¿No tienes cuenta?",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "signInButton": "Iniciar sesión",
+    "signUpButton": "Crear cuenta"
+  },
+  "account": {
+    "title": "Mi cuenta",
+    "repairs": "Mis reparaciones",
+    "orders": "Mis pedidos",
+    "messages": "Mensajes",
+    "noRepairs": "Aún no hay solicitudes de reparación.",
+    "noOrders": "Aún no hay pedidos.",
+    "noMessages": "Aún no hay conversaciones. ¡Escríbenos cuando quieras!"
+  },
+  "admin": {
+    "title": "Panel de administración",
+    "products": "Productos",
+    "repairs": "Reparaciones",
+    "orders": "Pedidos",
+    "messages": "Mensajes",
+    "settings": "Configuración",
+    "addProduct": "Agregar producto",
+    "editProduct": "Editar producto",
+    "save": "Guardar cambios",
+    "saved": "¡Guardado!",
+    "storeSettings": {
+      "title": "Configuración de la tienda",
+      "storeName": "Nombre de la tienda",
+      "tagline": "Eslogan",
+      "email": "Correo comercial",
+      "phone": "Teléfono",
+      "address": "Dirección de la tienda",
+      "addressLine1": "Dirección línea 1",
+      "city": "Ciudad",
+      "state": "Estado",
+      "zip": "Código postal",
+      "deliveryRadius": "Radio de entrega (km)",
+      "storeDelivery": "Activar entrega de la tienda",
+      "deliveryService": "Activar servicio de entrega",
+      "logoUrl": "URL del logo",
+      "logoPlaceholder": "URL del logo placeholder",
+      "stripeEnabled": "Activar pagos Stripe (pendiente)"
+    }
+  },
+  "chat": {
+    "title": "Chatea con ELLA",
+    "placeholder": "Escribe un mensaje...",
+    "send": "Enviar",
+    "greeting": "¡Hola! ¿Cómo podemos ayudarte hoy?"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Algo salió mal",
+    "back": "Volver",
+    "learnMore": "Saber más"
+  },
+  "footer": {
+    "tagline": "Reparación y tienda de celulares — con cariño.",
+    "rights": "Todos los derechos reservados."
+  }
+}

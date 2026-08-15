@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffbfa;
+  --foreground: #4a3f55;
+  --ella-blush: #fff5f7;
+  --ella-rose: #f4a4b8;
+  --ella-rose-deep: #e8919a;
+  --ella-lavender: #e8d5f2;
+  --ella-lilac: #c9a0dc;
+  --ella-cream: #fff9f5;
+  --ella-peach: #ffd4c4;
+  --ella-muted: #9b8aa5;
+  --ella-card: #ffffff;
+  --ella-border: #f3e8ef;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-ella-blush: var(--ella-blush);
+  --color-ella-rose: var(--ella-rose);
+  --color-ella-rose-deep: var(--ella-rose-deep);
+  --color-ella-lavender: var(--ella-lavender);
+  --color-ella-lilac: var(--ella-lilac);
+  --color-ella-cream: var(--ella-cream);
+  --color-ella-peach: var(--ella-peach);
+  --color-ella-muted: var(--ella-muted);
+  --color-ella-card: var(--ella-card);
+  --color-ella-border: var(--ella-border);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-cormorant);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.ella-blob {
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: float 8s ease-in-out infinite;
+}
+
+.ella-blob-delay {
+  animation-delay: -4s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.03);
+  }
+}
+
+.ella-option-card {
+  @apply rounded-2xl border-2 border-ella-border bg-ella-card p-4 transition-all duration-200 cursor-pointer;
+}
+
+.ella-option-card:hover {
+  @apply border-ella-rose/50 shadow-sm;
+}
+
+.ella-option-card.selected {
+  @apply border-ella-rose-deep shadow-md ring-2 ring-ella-rose/20;
+}
+
+.ella-sparkle {
+  background: linear-gradient(135deg, var(--ella-rose), var(--ella-lilac));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
