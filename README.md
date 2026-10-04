@@ -24,6 +24,42 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) — the app works with **seed data** even before Supabase is configured.
 
+**Continuing after a new machine or agent session?** See [docs/CONTINUITY.md](docs/CONTINUITY.md).
+
+## Test customer & admin (dev mode)
+
+Without Supabase, auth is disabled by default — you only see the **public** shop. To preview account and admin areas locally, enable dev mode:
+
+```env
+# .env.local
+NEXT_PUBLIC_DEV_AUTH_ENABLED=true
+```
+
+Restart `npm run dev`. A **yellow panel** appears bottom-left with three buttons:
+
+| Button | What you can test |
+|--------|-------------------|
+| **Guest** | Public shop only (default) |
+| **Customer** | `/account`, repairs list, orders list (mock data) |
+| **Admin** | `/admin`, products, settings, orders, repairs |
+
+**Quick links after switching role:**
+- Customer → [http://localhost:3000/en/account](http://localhost:3000/en/account)
+- Admin → [http://localhost:3000/en/admin](http://localhost:3000/en/admin)
+
+Dev mode is **development-only** and has no effect in production.
+
+### Real admin (with Supabase)
+
+Once Supabase is connected:
+1. Register at `/en/auth/register` with `ellaphonerepair@gmail.com`
+2. Run in Supabase SQL Editor:
+   ```sql
+   update public.profiles set role = 'admin'
+   where id = (select id from auth.users where email = 'ellaphonerepair@gmail.com');
+   ```
+3. Sign out and back in — **Admin** link appears in the header
+
 ## Supabase setup
 
 ### 1. Create a project

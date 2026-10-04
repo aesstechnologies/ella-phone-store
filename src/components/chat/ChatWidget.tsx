@@ -26,7 +26,11 @@ export function ChatWidget({ userId }: { userId?: string | null }) {
         "postgres_changes",
         { event: "INSERT", schema: "public", table: "messages" },
         (payload) => {
-          const msg = payload.new as { id: string; content: string; sender_id: string };
+          const msg = payload.new as {
+            id: string;
+            content: string;
+            sender_id: string;
+          };
           if (msg.sender_id !== userId) {
             setMessages((prev) => [
               ...prev,
@@ -35,7 +39,11 @@ export function ChatWidget({ userId }: { userId?: string | null }) {
           }
         },
       )
-      .subscribe();
+      .subscribe((status) => {
+        if (status === "CHANNEL_ERROR") {
+          console.warn("Chat realtime unavailable");
+        }
+      });
 
     return () => {
       supabase.removeChannel(channel);

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import type { StoreSettings } from "@/types/database";
 
@@ -11,13 +10,11 @@ export function Logo({
 }) {
   return (
     <Link href="/" className={`flex items-center gap-3 ${className}`}>
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src={settings.logo_url || "/logo.svg"}
         alt={settings.store_name}
-        width={140}
-        height={36}
         className="h-9 w-auto"
-        priority
       />
     </Link>
   );
