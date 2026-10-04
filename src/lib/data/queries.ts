@@ -8,6 +8,8 @@ import {
   defaultStoreSettings,
   seedProducts,
 } from "@/lib/data/seed";
+import { devMockOrders, devMockRepairs } from "@/lib/data/dev-mock";
+import { getDevSession, isDevUserId } from "@/lib/dev-auth";
 import { createClientOrNull } from "@/lib/supabase/server";
 
 export async function getStoreSettings(): Promise<StoreSettings> {
@@ -63,6 +65,9 @@ export async function getFeaturedProducts(): Promise<Product[]> {
 }
 
 export async function getCurrentProfile() {
+  const devSession = await getDevSession();
+  if (devSession) return devSession;
+
   const supabase = await createClientOrNull();
   if (!supabase) return null;
 
@@ -81,6 +86,8 @@ export async function getCurrentProfile() {
 }
 
 export async function getUserRepairs(userId: string): Promise<Repair[]> {
+  if (isDevUserId(userId)) return devMockRepairs;
+
   const supabase = await createClientOrNull();
   if (!supabase) return [];
 
@@ -94,6 +101,8 @@ export async function getUserRepairs(userId: string): Promise<Repair[]> {
 }
 
 export async function getUserOrders(userId: string): Promise<Order[]> {
+  if (isDevUserId(userId)) return devMockOrders;
+
   const supabase = await createClientOrNull();
   if (!supabase) return [];
 

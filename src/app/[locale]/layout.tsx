@@ -1,24 +1,14 @@
 import { ChatWidget } from "@/components/chat/ChatWidget";
+import { DevRoleSwitcher } from "@/components/dev/DevRoleSwitcher";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { getDevRole, isDevAuthEnabled } from "@/lib/dev-auth";
 import { getCurrentProfile, getStoreSettings } from "@/lib/data/queries";
 import { routing } from "@/i18n/routing";
-import { Cormorant, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
-
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-});
-
-const cormorant = Cormorant({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -54,9 +44,19 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const settings = await getStoreSettings();
   const session = await getCurrentProfile();
+  const devRole = await getDevRole();
+  const showDevSwitcher = isDevAuthEnabled();
 
   return (
-    <html lang={locale} className={`${dmSans.variable} ${cormorant.variable} h-full`}>
+    <html lang={locale} className="h-full">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="min-h-full flex flex-col antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header
@@ -67,6 +67,7 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer settings={settings} locale={locale} />
           <ChatWidget userId={session?.user?.id} />
+          {showDevSwitcher && <DevRoleSwitcher currentRole={devRole} />}
         </NextIntlClientProvider>
       </body>
     </html>
